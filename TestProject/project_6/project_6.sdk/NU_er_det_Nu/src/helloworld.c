@@ -65,7 +65,7 @@ int main()
 {
     init_platform();
 
-    xil_printf("Hello Test4\n\r");
+    xil_printf("Helo Test4\n\r");
 
     XHwaccel_Initialize(&hw, XPAR_HWACCEL_0_DEVICE_ID);
 

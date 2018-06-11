@@ -72,7 +72,7 @@ set rc [catch {
   set_property webtalk.parent_dir D:/Smartgit/RTS-/TestProject/project_6/project_6.cache/wt [current_project]
   set_property parent.project_path D:/Smartgit/RTS-/TestProject/project_6/project_6.xpr [current_project]
   set_property ip_repo_paths {
-  d:/Smartgit/RTS-/TestProject/ip_repo/myip_1.0
+  D:/Smartgit/RTS-/TestProject/ip_repo/myip_1.0
   C:/Users/JARVIS/AppData/Roaming/Xilinx/Vivado/HLS
 } [current_project]
   set_property ip_output_repo D:/Smartgit/RTS-/TestProject/project_6/project_6.cache/ip [current_project]

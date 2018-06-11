@@ -58,7 +58,6 @@ AXI_GP1_THREAD_ID_WIDTH=12,C_NUM_F2P_INTR_INPUTS=1,C_IRQ_F2P_MODE=DIRECT,C_DQ_WI
 ,C_GP1_EN_MODIFIABLE_TXN=1}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_processing_system7_0_0 (
-  SDIO0_WP,
   TTC0_WAVE0_OUT,
   TTC0_WAVE1_OUT,
   TTC0_WAVE2_OUT,
@@ -129,8 +128,6 @@ module design_1_processing_system7_0_0 (
   PS_PORB
 );
 
-(* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 WP" *)
-input wire SDIO0_WP;
 output wire TTC0_WAVE0_OUT;
 output wire TTC0_WAVE1_OUT;
 output wire TTC0_WAVE2_OUT;
@@ -413,7 +410,7 @@ inout wire PS_PORB;
     .SDIO0_DATA_T(),
     .SDIO0_LED(),
     .SDIO0_CDN(1'B0),
-    .SDIO0_WP(SDIO0_WP),
+    .SDIO0_WP(1'B0),
     .SDIO0_BUSPOW(),
     .SDIO0_BUSVOLT(),
     .SDIO1_CLK(),

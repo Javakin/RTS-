@@ -677,7 +677,6 @@
 
 //MODULE DECLARATION
  module design_1_processing_system7_0_0 (
-  SDIO0_WP,
   TTC0_WAVE0_OUT,
   TTC0_WAVE1_OUT,
   TTC0_WAVE2_OUT,
@@ -809,7 +808,6 @@
 
 //INPUT AND OUTPUT PORTS
 
-      input  SDIO0_WP;
       output  TTC0_WAVE0_OUT;
       output  TTC0_WAVE1_OUT;
       output  TTC0_WAVE2_OUT;

@@ -1020,3 +1020,264 @@ con
 ----------------End of Script----------------
 
 16:41:56 INFO  : Launch script is exported to file 'D:\Smartgit\RTS-\TestProject\project_6\project_6.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_nu_er_det_nu.elf_on_local.tcl'
+17:27:39 INFO  : Disconnected from the channel tcfchan#20.
+17:31:12 INFO  : Registering command handlers for SDK TCF services
+17:31:13 INFO  : Launching XSCT server: xsct.bat -interactive D:\Smartgit\RTS-\TestProject\project_6\project_6.sdk\temp_xsdb_launch_script.tcl
+17:31:18 INFO  : XSCT server has started successfully.
+17:31:20 INFO  : Successfully done setting XSCT server connection channel  
+17:31:20 INFO  : Successfully done setting SDK workspace  
+17:31:20 INFO  : Processing command line option -hwspec D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper.hdf.
+17:31:20 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+17:31:25 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1528731023868,  Project:1528727479377
+17:31:25 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper.hdf.
+17:31:26 INFO  : Copied contents of D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+17:31:29 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:31:31 INFO  : 
+17:31:32 INFO  : Updating hardware inferred compiler options for NU_er_det_Nu.
+17:31:33 INFO  : Updating hardware inferred compiler options for NU_er_det_Nu_bsp_xgpio_low_level_example_1.
+17:31:33 INFO  : Clearing existing target manager status.
+17:32:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:32:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785460A" && level==0} -index 1' command is executed.
+17:32:57 INFO  : FPGA configured successfully with bitstream "D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:33:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785460A" && level==0} -index 1' command is executed.
+17:33:35 INFO  : 'fpga -state' command is executed.
+17:33:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:33:35 INFO  : Jtag cable 'Digilent Zybo 210279785460A' is selected.
+17:33:35 INFO  : 'jtag frequency' command is executed.
+17:33:35 INFO  : Sourcing of 'D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:33:35 INFO  : Context for 'APU' is selected.
+17:33:35 INFO  : Hardware design information is loaded from 'D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:33:35 INFO  : 'configparams force-mem-access 1' command is executed.
+17:33:35 INFO  : Context for 'APU' is selected.
+17:33:36 INFO  : 'stop' command is executed.
+17:33:36 INFO  : 'ps7_init' command is executed.
+17:33:36 INFO  : 'ps7_post_config' command is executed.
+17:33:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:33:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:33:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:33:36 INFO  : The application 'D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/NU_er_det_Nu/Debug/NU_er_det_Nu.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:33:36 INFO  : 'configparams force-mem-access 0' command is executed.
+17:33:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+loadhw -hw D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+dow D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/NU_er_det_Nu/Debug/NU_er_det_Nu.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:33:36 INFO  : Memory regions updated for context APU
+17:33:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:33:36 INFO  : 'con' command is executed.
+17:33:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+con
+----------------End of Script----------------
+
+17:33:36 INFO  : Launch script is exported to file 'D:\Smartgit\RTS-\TestProject\project_6\project_6.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_nu_er_det_nu.elf_on_local.tcl'
+17:50:35 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1528732219957,  Project:1528731023868
+17:50:35 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+17:50:42 INFO  : Copied contents of D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+17:50:46 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:50:48 INFO  : 
+17:50:49 INFO  : Updating hardware inferred compiler options for NU_er_det_Nu.
+17:50:50 INFO  : Updating hardware inferred compiler options for NU_er_det_Nu_bsp_xgpio_low_level_example_1.
+17:50:50 INFO  : Clearing existing target manager status.
+17:51:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:51:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785460A" && level==0} -index 1' command is executed.
+17:51:21 INFO  : FPGA configured successfully with bitstream "D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:51:27 INFO  : Disconnected from the channel tcfchan#1.
+17:51:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785460A" && level==0} -index 1' command is executed.
+17:51:29 INFO  : 'fpga -state' command is executed.
+17:51:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:51:29 INFO  : Jtag cable 'Digilent Zybo 210279785460A' is selected.
+17:51:29 INFO  : 'jtag frequency' command is executed.
+17:51:29 INFO  : Sourcing of 'D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:51:29 INFO  : Context for 'APU' is selected.
+17:51:29 INFO  : Hardware design information is loaded from 'D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:51:29 INFO  : 'configparams force-mem-access 1' command is executed.
+17:51:29 INFO  : Context for 'APU' is selected.
+17:51:29 INFO  : 'stop' command is executed.
+17:51:29 INFO  : 'ps7_init' command is executed.
+17:51:29 INFO  : 'ps7_post_config' command is executed.
+17:51:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:51:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:51:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:51:29 INFO  : The application 'D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/NU_er_det_Nu/Debug/NU_er_det_Nu.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:51:29 INFO  : 'configparams force-mem-access 0' command is executed.
+17:51:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+loadhw -hw D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+dow D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/NU_er_det_Nu/Debug/NU_er_det_Nu.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:51:29 INFO  : Memory regions updated for context APU
+17:51:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:51:30 INFO  : 'con' command is executed.
+17:51:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+con
+----------------End of Script----------------
+
+17:51:30 INFO  : Launch script is exported to file 'D:\Smartgit\RTS-\TestProject\project_6\project_6.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_nu_er_det_nu.elf_on_local.tcl'
+17:55:32 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1528732512019,  Project:1528732219957
+17:55:32 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+17:55:34 INFO  : Copied contents of D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+17:55:37 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:55:39 INFO  : 
+17:55:40 INFO  : Updating hardware inferred compiler options for NU_er_det_Nu.
+17:55:41 INFO  : Updating hardware inferred compiler options for NU_er_det_Nu_bsp_xgpio_low_level_example_1.
+17:55:41 INFO  : Clearing existing target manager status.
+17:55:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:55:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785460A" && level==0} -index 1' command is executed.
+17:56:00 INFO  : FPGA configured successfully with bitstream "D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+18:07:25 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1528733211575,  Project:1528732512019
+18:07:25 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:07:34 INFO  : Copied contents of D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+18:07:37 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:07:39 INFO  : 
+18:07:40 INFO  : Updating hardware inferred compiler options for NU_er_det_Nu.
+18:07:41 INFO  : Updating hardware inferred compiler options for NU_er_det_Nu_bsp_xgpio_low_level_example_1.
+18:07:41 INFO  : Clearing existing target manager status.
+18:12:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:12:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785460A" && level==0} -index 1' command is executed.
+18:12:34 INFO  : FPGA configured successfully with bitstream "D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+18:13:02 INFO  : Disconnected from the channel tcfchan#2.
+18:13:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785460A" && level==0} -index 1' command is executed.
+18:13:03 INFO  : 'fpga -state' command is executed.
+18:13:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:13:03 INFO  : Jtag cable 'Digilent Zybo 210279785460A' is selected.
+18:13:03 INFO  : 'jtag frequency' command is executed.
+18:13:03 INFO  : Sourcing of 'D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:13:03 INFO  : Context for 'APU' is selected.
+18:13:03 INFO  : Hardware design information is loaded from 'D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+18:13:03 INFO  : 'configparams force-mem-access 1' command is executed.
+18:13:03 INFO  : Context for 'APU' is selected.
+18:13:03 INFO  : 'stop' command is executed.
+18:13:04 INFO  : 'ps7_init' command is executed.
+18:13:04 INFO  : 'ps7_post_config' command is executed.
+18:13:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:13:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:13:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:13:04 INFO  : The application 'D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/NU_er_det_Nu/Debug/NU_er_det_Nu.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:13:04 INFO  : 'configparams force-mem-access 0' command is executed.
+18:13:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+loadhw -hw D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+dow D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/NU_er_det_Nu/Debug/NU_er_det_Nu.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:13:04 INFO  : Memory regions updated for context APU
+18:13:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:13:04 INFO  : 'con' command is executed.
+18:13:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+con
+----------------End of Script----------------
+
+18:13:04 INFO  : Launch script is exported to file 'D:\Smartgit\RTS-\TestProject\project_6\project_6.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_nu_er_det_nu.elf_on_local.tcl'
+18:25:48 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1528734282846,  Project:1528733211575
+18:25:48 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:26:45 INFO  : Copied contents of D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+18:26:48 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:26:51 INFO  : 
+18:26:51 INFO  : Updating hardware inferred compiler options for NU_er_det_Nu.
+18:26:52 INFO  : Updating hardware inferred compiler options for NU_er_det_Nu_bsp_xgpio_low_level_example_1.
+18:26:52 INFO  : Clearing existing target manager status.
+18:27:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:27:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785460A" && level==0} -index 1' command is executed.
+18:27:58 INFO  : FPGA configured successfully with bitstream "D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+18:28:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:28:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785460A" && level==0} -index 1' command is executed.
+18:28:40 INFO  : FPGA configured successfully with bitstream "D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+18:43:28 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1528735363595,  Project:1528734282846
+18:43:28 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:43:30 INFO  : Copied contents of D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+18:43:33 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:43:35 INFO  : 
+18:43:36 INFO  : Updating hardware inferred compiler options for NU_er_det_Nu.
+18:43:37 INFO  : Updating hardware inferred compiler options for NU_er_det_Nu_bsp_xgpio_low_level_example_1.
+18:43:37 INFO  : Clearing existing target manager status.
+18:46:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:46:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785460A" && level==0} -index 1' command is executed.
+18:46:30 INFO  : FPGA configured successfully with bitstream "D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+18:46:43 INFO  : Disconnected from the channel tcfchan#3.
+18:46:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279785460A" && level==0} -index 1' command is executed.
+18:46:44 INFO  : 'fpga -state' command is executed.
+18:46:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:46:44 INFO  : Jtag cable 'Digilent Zybo 210279785460A' is selected.
+18:46:44 INFO  : 'jtag frequency' command is executed.
+18:46:44 INFO  : Sourcing of 'D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:46:45 INFO  : Context for 'APU' is selected.
+18:46:45 INFO  : Hardware design information is loaded from 'D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+18:46:45 INFO  : 'configparams force-mem-access 1' command is executed.
+18:46:45 INFO  : Context for 'APU' is selected.
+18:46:45 INFO  : 'stop' command is executed.
+18:46:45 INFO  : 'ps7_init' command is executed.
+18:46:45 INFO  : 'ps7_post_config' command is executed.
+18:46:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:46:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:46:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:46:45 INFO  : The application 'D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/NU_er_det_Nu/Debug/NU_er_det_Nu.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:46:45 INFO  : 'configparams force-mem-access 0' command is executed.
+18:46:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+loadhw -hw D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+dow D:/Smartgit/RTS-/TestProject/project_6/project_6.sdk/NU_er_det_Nu/Debug/NU_er_det_Nu.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:46:45 INFO  : Memory regions updated for context APU
+18:46:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:46:45 INFO  : 'con' command is executed.
+18:46:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785460A"} -index 0
+con
+----------------End of Script----------------
+
+18:46:45 INFO  : Launch script is exported to file 'D:\Smartgit\RTS-\TestProject\project_6\project_6.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_nu_er_det_nu.elf_on_local.tcl'
