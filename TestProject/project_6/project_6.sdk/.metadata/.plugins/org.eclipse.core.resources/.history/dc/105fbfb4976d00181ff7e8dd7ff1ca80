@@ -65,7 +65,7 @@ int main()
 {
     init_platform();
 
-    printf("Helo Tst4\n\r");
+    xil_printf("Helo Test4\n\r");
 
     XHwaccel_Initialize(&hw, XPAR_HWACCEL_0_DEVICE_ID);
 
@@ -89,7 +89,7 @@ int main()
     XHwaccel_Read_s_screen_val_Words(&hw, 0, result, SIZE);
 
     for(unsigned int i = 0; i<SIZE; i++){
-    	printf("%u, ", result[i]);
+    	xil_printf("%u, ", result[i]);
 	}
 
 

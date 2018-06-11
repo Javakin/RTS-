@@ -89,7 +89,7 @@ int main()
     XHwaccel_Read_s_screen_val_Words(&hw, 0, result, SIZE);
 
     for(unsigned int i = 0; i<SIZE; i++){
-    	printf("%u, ", result[i]);
+    	xil_printf("%u, ", result[i]);
 	}
 
 
