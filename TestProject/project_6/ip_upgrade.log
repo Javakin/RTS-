@@ -1,0 +1,84 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon Jun 11 16:16:36 2018
+| Host         : DESKTOP-2CB2V6S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_HWAccel_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_HWAccel_0_0 (xilinx.com:hls:HWAccel:1.0) from (Rev. 1806111549) to (Rev. 1806111615)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_HWAccel_0_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_AXI_L_ARADDR' width 10 differs from original width 11
+
+-Upgraded port 's_axi_AXI_L_AWADDR' width 10 differs from original width 11
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon Jun 11 15:50:32 2018
+| Host         : DESKTOP-2CB2V6S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_HWAccel_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_HWAccel_0_0 (xilinx.com:hls:HWAccel:1.0) from (Rev. 1806102038) to (Rev. 1806111549)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Sun Jun 10 20:40:14 2018
+| Host         : DESKTOP-2CB2V6S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_HWAccel_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_HWAccel_0_0 (xilinx.com:hls:HWAccel:1.0) from (Rev. 1806102022) to (Rev. 1806102038)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_HWAccel_0_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_AXI_L_ARADDR' width 11 differs from original width 23
+
+-Upgraded port 's_axi_AXI_L_AWADDR' width 11 differs from original width 23
+
+

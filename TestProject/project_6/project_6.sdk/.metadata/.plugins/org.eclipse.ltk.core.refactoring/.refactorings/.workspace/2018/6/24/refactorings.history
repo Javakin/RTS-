@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;NU_er_det_Nu_bsp_xgpiops_polled_example_1&apos;" deleteContents="true" description="Delete resource &apos;NU_er_det_Nu_bsp_xgpiops_polled_example_1&apos;" element1="/NU_er_det_Nu_bsp_xgpiops_polled_example_1" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1528648007779"/>
+</session>
