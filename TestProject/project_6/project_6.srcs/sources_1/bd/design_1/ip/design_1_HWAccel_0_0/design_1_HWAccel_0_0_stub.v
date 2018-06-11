@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-// Date        : Mon Jun 11 16:19:27 2018
+// Date        : Mon Jun 11 19:04:06 2018
 // Host        : DESKTOP-2CB2V6S running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               d:/Smartgit/RTS-/TestProject/project_6/project_6.srcs/sources_1/bd/design_1/ip/design_1_HWAccel_0_0/design_1_HWAccel_0_0_stub.v
+//               D:/Smartgit/RTS-/TestProject/project_6/project_6.srcs/sources_1/bd/design_1/ip/design_1_HWAccel_0_0/design_1_HWAccel_0_0_stub.v
 // Design      : design_1_HWAccel_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1
@@ -19,8 +19,8 @@ module design_1_HWAccel_0_0(s_axi_AXI_L_AWADDR, s_axi_AXI_L_AWVALID,
   s_axi_AXI_L_WREADY, s_axi_AXI_L_BRESP, s_axi_AXI_L_BVALID, s_axi_AXI_L_BREADY, 
   s_axi_AXI_L_ARADDR, s_axi_AXI_L_ARVALID, s_axi_AXI_L_ARREADY, s_axi_AXI_L_RDATA, 
   s_axi_AXI_L_RRESP, s_axi_AXI_L_RVALID, s_axi_AXI_L_RREADY, ap_clk, ap_rst_n, interrupt)
-/* synthesis syn_black_box black_box_pad_pin="s_axi_AXI_L_AWADDR[9:0],s_axi_AXI_L_AWVALID,s_axi_AXI_L_AWREADY,s_axi_AXI_L_WDATA[31:0],s_axi_AXI_L_WSTRB[3:0],s_axi_AXI_L_WVALID,s_axi_AXI_L_WREADY,s_axi_AXI_L_BRESP[1:0],s_axi_AXI_L_BVALID,s_axi_AXI_L_BREADY,s_axi_AXI_L_ARADDR[9:0],s_axi_AXI_L_ARVALID,s_axi_AXI_L_ARREADY,s_axi_AXI_L_RDATA[31:0],s_axi_AXI_L_RRESP[1:0],s_axi_AXI_L_RVALID,s_axi_AXI_L_RREADY,ap_clk,ap_rst_n,interrupt" */;
-  input [9:0]s_axi_AXI_L_AWADDR;
+/* synthesis syn_black_box black_box_pad_pin="s_axi_AXI_L_AWADDR[5:0],s_axi_AXI_L_AWVALID,s_axi_AXI_L_AWREADY,s_axi_AXI_L_WDATA[31:0],s_axi_AXI_L_WSTRB[3:0],s_axi_AXI_L_WVALID,s_axi_AXI_L_WREADY,s_axi_AXI_L_BRESP[1:0],s_axi_AXI_L_BVALID,s_axi_AXI_L_BREADY,s_axi_AXI_L_ARADDR[5:0],s_axi_AXI_L_ARVALID,s_axi_AXI_L_ARREADY,s_axi_AXI_L_RDATA[31:0],s_axi_AXI_L_RRESP[1:0],s_axi_AXI_L_RVALID,s_axi_AXI_L_RREADY,ap_clk,ap_rst_n,interrupt" */;
+  input [5:0]s_axi_AXI_L_AWADDR;
   input s_axi_AXI_L_AWVALID;
   output s_axi_AXI_L_AWREADY;
   input [31:0]s_axi_AXI_L_WDATA;
@@ -30,7 +30,7 @@ module design_1_HWAccel_0_0(s_axi_AXI_L_AWADDR, s_axi_AXI_L_AWVALID,
   output [1:0]s_axi_AXI_L_BRESP;
   output s_axi_AXI_L_BVALID;
   input s_axi_AXI_L_BREADY;
-  input [9:0]s_axi_AXI_L_ARADDR;
+  input [5:0]s_axi_AXI_L_ARADDR;
   input s_axi_AXI_L_ARVALID;
   output s_axi_AXI_L_ARREADY;
   output [31:0]s_axi_AXI_L_RDATA;

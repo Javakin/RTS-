@@ -6,42 +6,42 @@
 // ==============================================================
 
 // AXI_L
-// 0x000 : Control signals
-//         bit 0  - ap_start (Read/Write/COH)
-//         bit 1  - ap_done (Read/COR)
-//         bit 2  - ap_idle (Read)
-//         bit 3  - ap_ready (Read)
-//         bit 7  - auto_restart (Read/Write)
-//         others - reserved
-// 0x004 : Global Interrupt Enable Register
-//         bit 0  - Global Interrupt Enable (Read/Write)
-//         others - reserved
-// 0x008 : IP Interrupt Enable Register (Read/Write)
-//         bit 0  - Channel 0 (ap_done)
-//         bit 1  - Channel 1 (ap_ready)
-//         others - reserved
-// 0x00c : IP Interrupt Status Register (Read/TOW)
-//         bit 0  - Channel 0 (ap_done)
-//         bit 1  - Channel 1 (ap_ready)
-//         others - reserved
-// 0x100 ~
-// 0x1ff : Memory 's_screen_val' (50 * 32b)
-//         Word n : bit [31:0] - s_screen_val[n]
-// 0x200 ~
-// 0x2ff : Memory 's_mask_val' (50 * 32b)
-//         Word n : bit [31:0] - s_mask_val[n]
+// 0x00 : Control signals
+//        bit 0  - ap_start (Read/Write/COH)
+//        bit 1  - ap_done (Read/COR)
+//        bit 2  - ap_idle (Read)
+//        bit 3  - ap_ready (Read)
+//        bit 7  - auto_restart (Read/Write)
+//        others - reserved
+// 0x04 : Global Interrupt Enable Register
+//        bit 0  - Global Interrupt Enable (Read/Write)
+//        others - reserved
+// 0x08 : IP Interrupt Enable Register (Read/Write)
+//        bit 0  - Channel 0 (ap_done)
+//        bit 1  - Channel 1 (ap_ready)
+//        others - reserved
+// 0x0c : IP Interrupt Status Register (Read/TOW)
+//        bit 0  - Channel 0 (ap_done)
+//        bit 1  - Channel 1 (ap_ready)
+//        others - reserved
+// 0x10 ~
+// 0x1f : Memory 's_screen_val' (4 * 32b)
+//        Word n : bit [31:0] - s_screen_val[n]
+// 0x20 ~
+// 0x2f : Memory 's_mask_val' (4 * 32b)
+//        Word n : bit [31:0] - s_mask_val[n]
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
-#define XHWACCEL_AXI_L_ADDR_AP_CTRL           0x000
-#define XHWACCEL_AXI_L_ADDR_GIE               0x004
-#define XHWACCEL_AXI_L_ADDR_IER               0x008
-#define XHWACCEL_AXI_L_ADDR_ISR               0x00c
-#define XHWACCEL_AXI_L_ADDR_S_SCREEN_VAL_BASE 0x100
-#define XHWACCEL_AXI_L_ADDR_S_SCREEN_VAL_HIGH 0x1ff
+#define XHWACCEL_AXI_L_ADDR_AP_CTRL           0x00
+#define XHWACCEL_AXI_L_ADDR_GIE               0x04
+#define XHWACCEL_AXI_L_ADDR_IER               0x08
+#define XHWACCEL_AXI_L_ADDR_ISR               0x0c
+#define XHWACCEL_AXI_L_ADDR_S_SCREEN_VAL_BASE 0x10
+#define XHWACCEL_AXI_L_ADDR_S_SCREEN_VAL_HIGH 0x1f
 #define XHWACCEL_AXI_L_WIDTH_S_SCREEN_VAL     32
-#define XHWACCEL_AXI_L_DEPTH_S_SCREEN_VAL     50
-#define XHWACCEL_AXI_L_ADDR_S_MASK_VAL_BASE   0x200
-#define XHWACCEL_AXI_L_ADDR_S_MASK_VAL_HIGH   0x2ff
+#define XHWACCEL_AXI_L_DEPTH_S_SCREEN_VAL     4
+#define XHWACCEL_AXI_L_ADDR_S_MASK_VAL_BASE   0x20
+#define XHWACCEL_AXI_L_ADDR_S_MASK_VAL_HIGH   0x2f
 #define XHWACCEL_AXI_L_WIDTH_S_MASK_VAL       32
-#define XHWACCEL_AXI_L_DEPTH_S_MASK_VAL       50
+#define XHWACCEL_AXI_L_DEPTH_S_MASK_VAL       4
 

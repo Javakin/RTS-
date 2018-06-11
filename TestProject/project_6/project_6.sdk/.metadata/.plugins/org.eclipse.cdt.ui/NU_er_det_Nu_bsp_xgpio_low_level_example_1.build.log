@@ -1,4 +1,4 @@
-18:45:31 **** Auto Build of configuration Debug for project NU_er_det_Nu_bsp_xgpio_low_level_example_1 ****
+19:32:10 **** Build of configuration Debug for project NU_er_det_Nu_bsp_xgpio_low_level_example_1 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -19,5 +19,5 @@ arm-none-eabi-size NU_er_det_Nu_bsp_xgpio_low_level_example_1.elf  |tee "NU_er_d
 'Finished building: NU_er_det_Nu_bsp_xgpio_low_level_example_1.elf.size'
 ' '
 
-18:45:32 Build Finished (took 818ms)
+19:32:11 Build Finished (took 989ms)
 

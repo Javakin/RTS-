@@ -1,0 +1,8 @@
+00:42:15 **** Incremental Build of configuration Debug for project NU_er_det_Nu ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+
+00:42:15 Build Finished (took 227ms)
+

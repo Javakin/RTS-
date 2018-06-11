@@ -1,0 +1,24 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="HWAccel" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+<option name="bundle" value="AXI_L"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="HWAccel" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="s"/>
+<option name="bundle" value="AXI_L"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="HWAccel" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="HWAccel" label="">
+<pragma name="UNROLL"/>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

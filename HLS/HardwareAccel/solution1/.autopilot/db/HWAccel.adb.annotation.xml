@@ -1,0 +1,8 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="14" filename="HardwareAccel/Main.c" linenumber="28" name="tmp_1" contextFuncName="HWAccel" moduleName="HWAccel" rtlName="HWAccel_mul_32s_3bkb_U1" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\JARVIS\AppData\Roaming\Xilinx\Vivado\HLS"></item>
+<item  id="20" filename="HardwareAccel/Main.c" linenumber="28" name="tmp_1_1" contextFuncName="HWAccel" moduleName="HWAccel" rtlName="HWAccel_mul_32s_3bkb_U2" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\JARVIS\AppData\Roaming\Xilinx\Vivado\HLS"></item>
+<item  id="26" filename="HardwareAccel/Main.c" linenumber="28" name="tmp_1_2" contextFuncName="HWAccel" moduleName="HWAccel" rtlName="HWAccel_mul_32s_3bkb_U1" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\JARVIS\AppData\Roaming\Xilinx\Vivado\HLS"></item>
+<item  id="32" filename="HardwareAccel/Main.c" linenumber="28" name="tmp_1_3" contextFuncName="HWAccel" moduleName="HWAccel" rtlName="HWAccel_mul_32s_3bkb_U2" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\JARVIS\AppData\Roaming\Xilinx\Vivado\HLS"></item>
+</annotationInfo>
+</annotationInfo>

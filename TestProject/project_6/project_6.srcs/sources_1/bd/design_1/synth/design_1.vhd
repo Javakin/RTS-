@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
---Date        : Mon Jun 11 18:33:39 2018
+--Date        : Mon Jun 11 19:03:05 2018
 --Host        : DESKTOP-2CB2V6S running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1230,7 +1230,7 @@ architecture STRUCTURE of design_1 is
   end component design_1_rst_ps7_0_100M_0;
   component design_1_HWAccel_0_0 is
   port (
-    s_axi_AXI_L_AWADDR : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    s_axi_AXI_L_AWADDR : in STD_LOGIC_VECTOR ( 5 downto 0 );
     s_axi_AXI_L_AWVALID : in STD_LOGIC;
     s_axi_AXI_L_AWREADY : out STD_LOGIC;
     s_axi_AXI_L_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -1240,7 +1240,7 @@ architecture STRUCTURE of design_1 is
     s_axi_AXI_L_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_AXI_L_BVALID : out STD_LOGIC;
     s_axi_AXI_L_BREADY : in STD_LOGIC;
-    s_axi_AXI_L_ARADDR : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    s_axi_AXI_L_ARADDR : in STD_LOGIC_VECTOR ( 5 downto 0 );
     s_axi_AXI_L_ARVALID : in STD_LOGIC;
     s_axi_AXI_L_ARREADY : out STD_LOGIC;
     s_axi_AXI_L_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -1392,10 +1392,10 @@ HWAccel_0: component design_1_HWAccel_0_0
       ap_clk => processing_system7_0_FCLK_CLK0,
       ap_rst_n => rst_ps7_0_100M_peripheral_aresetn(0),
       interrupt => NLW_HWAccel_0_interrupt_UNCONNECTED,
-      s_axi_AXI_L_ARADDR(9 downto 0) => ps7_0_axi_periph_M01_AXI_ARADDR(9 downto 0),
+      s_axi_AXI_L_ARADDR(5 downto 0) => ps7_0_axi_periph_M01_AXI_ARADDR(5 downto 0),
       s_axi_AXI_L_ARREADY => ps7_0_axi_periph_M01_AXI_ARREADY,
       s_axi_AXI_L_ARVALID => ps7_0_axi_periph_M01_AXI_ARVALID,
-      s_axi_AXI_L_AWADDR(9 downto 0) => ps7_0_axi_periph_M01_AXI_AWADDR(9 downto 0),
+      s_axi_AXI_L_AWADDR(5 downto 0) => ps7_0_axi_periph_M01_AXI_AWADDR(5 downto 0),
       s_axi_AXI_L_AWREADY => ps7_0_axi_periph_M01_AXI_AWREADY,
       s_axi_AXI_L_AWVALID => ps7_0_axi_periph_M01_AXI_AWVALID,
       s_axi_AXI_L_BREADY => ps7_0_axi_periph_M01_AXI_BREADY,

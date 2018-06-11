@@ -153,7 +153,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>ADDR_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_AXI_L.ADDR_WIDTH">10</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_AXI_L.ADDR_WIDTH">6</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>DATA_WIDTH</spirit:name>
@@ -791,8 +791,8 @@
           <spirit:name>Memory_s_screen_val</spirit:name>
           <spirit:displayName>Memory_s_screen_val</spirit:displayName>
           <spirit:description>Memory s_screen_val</spirit:description>
-          <spirit:addressOffset>256</spirit:addressOffset>
-          <spirit:size spirit:format="long">256</spirit:size>
+          <spirit:addressOffset>16</spirit:addressOffset>
+          <spirit:size spirit:format="long">16</spirit:size>
           <spirit:access>read-write</spirit:access>
           <spirit:reset>
             <spirit:value spirit:format="long">0</spirit:value>
@@ -802,8 +802,8 @@
           <spirit:name>Memory_s_mask_val</spirit:name>
           <spirit:displayName>Memory_s_mask_val</spirit:displayName>
           <spirit:description>Memory s_mask_val</spirit:description>
-          <spirit:addressOffset>512</spirit:addressOffset>
-          <spirit:size spirit:format="long">256</spirit:size>
+          <spirit:addressOffset>32</spirit:addressOffset>
+          <spirit:size spirit:format="long">16</spirit:size>
           <spirit:access>read-write</spirit:access>
           <spirit:reset>
             <spirit:value spirit:format="long">0</spirit:value>
@@ -826,11 +826,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jun 11 14:16:52 UTC 2018</spirit:value>
+            <spirit:value>Mon Jun 11 17:03:05 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:c6f9c4b0</spirit:value>
+            <spirit:value>8:e03bcfb6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -846,11 +846,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jun 11 14:16:52 UTC 2018</spirit:value>
+            <spirit:value>Mon Jun 11 17:03:05 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:c6f9c4b0</spirit:value>
+            <spirit:value>8:e03bcfb6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -866,11 +866,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jun 11 14:16:52 UTC 2018</spirit:value>
+            <spirit:value>Mon Jun 11 17:03:05 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:64539d56</spirit:value>
+            <spirit:value>8:d00284b3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -886,11 +886,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jun 11 14:16:52 UTC 2018</spirit:value>
+            <spirit:value>Mon Jun 11 17:03:05 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:64539d56</spirit:value>
+            <spirit:value>8:d00284b3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -904,11 +904,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jun 11 14:19:31 UTC 2018</spirit:value>
+            <spirit:value>Mon Jun 11 17:04:06 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:c6f9c4b0</spirit:value>
+            <spirit:value>8:e03bcfb6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -919,7 +919,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_AXI_L_ADDR_WIDTH&apos;)) - 1)">9</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_AXI_L_ADDR_WIDTH&apos;)) - 1)">5</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1065,7 +1065,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_AXI_L_ADDR_WIDTH&apos;)) - 1)">9</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_AXI_L_ADDR_WIDTH&apos;)) - 1)">5</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1206,7 +1206,7 @@
     <spirit:modelParameters>
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
         <spirit:name>C_S_AXI_AXI_L_ADDR_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_AXI_AXI_L_ADDR_WIDTH">10</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_AXI_AXI_L_ADDR_WIDTH">6</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_S_AXI_AXI_L_DATA_WIDTH</spirit:name>
@@ -1223,15 +1223,15 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3295/hdl/vhdl/HWAccel_AXI_L_s_axi.vhd</spirit:name>
+        <spirit:name>../../ipshared/2a80/hdl/vhdl/HWAccel_AXI_L_s_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3295/hdl/vhdl/HWAccel_mul_32s_3bkb.vhd</spirit:name>
+        <spirit:name>../../ipshared/2a80/hdl/vhdl/HWAccel_mul_32s_3bkb.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3295/hdl/vhdl/HWAccel.vhd</spirit:name>
+        <spirit:name>../../ipshared/2a80/hdl/vhdl/HWAccel.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1246,17 +1246,17 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/3295/hdl/vhdl/HWAccel_AXI_L_s_axi.vhd</spirit:name>
+        <spirit:name>../../ipshared/2a80/hdl/vhdl/HWAccel_AXI_L_s_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3295/hdl/vhdl/HWAccel_mul_32s_3bkb.vhd</spirit:name>
+        <spirit:name>../../ipshared/2a80/hdl/vhdl/HWAccel_mul_32s_3bkb.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3295/hdl/vhdl/HWAccel.vhd</spirit:name>
+        <spirit:name>../../ipshared/2a80/hdl/vhdl/HWAccel.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1347,7 +1347,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">99</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">7</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -1371,10 +1371,10 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>Hwaccel</xilinx:displayName>
-      <xilinx:coreRevision>1806111615</xilinx:coreRevision>
+      <xilinx:coreRevision>1806111901</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_AXI_L.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_AXI_L.AWUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_AXI_L.BUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
@@ -1401,12 +1401,12 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="b364231a"/>
-      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="bf125b0d"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b79b5324"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="878ba7ac"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="bc6943c6"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="1dc35fa2"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="097feb6c"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="b71ad3f5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a95d993c"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="38e8254f"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="d6a22666"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="796dc6d8"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

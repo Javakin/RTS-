@@ -1,0 +1,147 @@
+
+
+================================================================
+== Vivado HLS Report for 'HWAccel'
+================================================================
+* Date:           Mon Jun 11 23:41:54 2018
+
+* Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
+* Project:        HardwareAccel
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   8.00|      6.91|        1.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    7|    7|    7|    7|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      -|      -|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        4|      8|    526|    280|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|    130|
+|Register         |        -|      -|    200|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        4|      8|    726|    410|
++-----------------+---------+-------+-------+-------+
+|Available        |      120|     80|  35200|  17600|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        3|     10|      2|      2|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+-----+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF | LUT |
+    +-------------------------+----------------------+---------+-------+-----+-----+
+    |HWAccel_AXI_L_s_axi_U    |HWAccel_AXI_L_s_axi   |        4|      0|  196|  180|
+    |HWAccel_mul_32s_3bkb_U1  |HWAccel_mul_32s_3bkb  |        0|      4|  165|   50|
+    |HWAccel_mul_32s_3bkb_U2  |HWAccel_mul_32s_3bkb  |        0|      4|  165|   50|
+    +-------------------------+----------------------+---------+-------+-----+-----+
+    |Total                    |                      |        4|      8|  526|  280|
+    +-------------------------+----------------------+---------+-------+-----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------------------+----+-----------+-----+-----------+
+    |          Name         | LUT| Input Size| Bits| Total Bits|
+    +-----------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm              |  44|          9|    1|          9|
+    |s_mask_val_address0    |  27|          5|    2|         10|
+    |s_screen_val_address0  |  44|          9|    2|         18|
+    |s_screen_val_d0        |  15|          3|   32|         96|
+    +-----------------------+----+-----------+-----+-----------+
+    |Total                  | 130|         26|   37|        133|
+    +-----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------+----+----+-----+-----------+
+    |    Name   | FF | LUT| Bits| Const Bits|
+    +-----------+----+----+-----+-----------+
+    |ap_CS_fsm  |   8|   0|    8|          0|
+    |reg_118    |  32|   0|   32|          0|
+    |reg_122    |  32|   0|   32|          0|
+    |reg_126    |  32|   0|   32|          0|
+    |reg_130    |  32|   0|   32|          0|
+    |reg_146    |  32|   0|   32|          0|
+    |reg_151    |  32|   0|   32|          0|
+    +-----------+----+----+-----+-----------+
+    |Total      | 200|   0|  200|          0|
+    +-----------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+--------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  | Source Object|    C Type    |
++---------------------+-----+-----+------------+--------------+--------------+
+|s_axi_AXI_L_AWVALID  |  in |    1|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_AWREADY  | out |    1|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_AWADDR   |  in |    6|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_WVALID   |  in |    1|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_WREADY   | out |    1|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_WDATA    |  in |   32|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_WSTRB    |  in |    4|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_ARVALID  |  in |    1|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_ARREADY  | out |    1|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_ARADDR   |  in |    6|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_RVALID   | out |    1|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_RREADY   |  in |    1|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_RDATA    | out |   32|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_RRESP    | out |    2|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_BVALID   | out |    1|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_BREADY   |  in |    1|    s_axi   |     AXI_L    |     array    |
+|s_axi_AXI_L_BRESP    | out |    2|    s_axi   |     AXI_L    |     array    |
+|ap_clk               |  in |    1| ap_ctrl_hs |    HWAccel   | return value |
+|ap_rst_n             |  in |    1| ap_ctrl_hs |    HWAccel   | return value |
+|interrupt            | out |    1| ap_ctrl_hs |    HWAccel   | return value |
++---------------------+-----+-----+------------+--------------+--------------+
+

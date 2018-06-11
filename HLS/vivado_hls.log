@@ -1,0 +1,19 @@
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'JARVIS' on host 'desktop-2cb2v6s' (Windows NT_amd64 version 6.2) on Mon Jun 11 23:42:05 +0200 2018
+INFO: [HLS 200-10] In directory 'C:/Users/JARVIS/AppData/Roaming/Xilinx/Vivado/HLS'
+INFO: [HLS 200-10] Opening project 'C:/Users/JARVIS/AppData/Roaming/Xilinx/Vivado/HLS/HardwareAccel'.
+INFO: [HLS 200-10] Opening solution 'C:/Users/JARVIS/AppData/Roaming/Xilinx/Vivado/HLS/HardwareAccel/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 8ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 11 23:42:17 2018...

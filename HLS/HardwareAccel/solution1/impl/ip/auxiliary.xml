@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="HWAccel" xd:componentRef="HWAccel" xd:initiationInterval="8" xd:clockPeriod="8.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXI_L" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="s-&gt;screen[].val" xd:originalName="s" xd:direction="inout" xd:interfaceRef="s_axi_AXI_L" xd:busTypeRef="axilite" xd:offset="0x10" xd:arraySize="4" xd:dataWidth="32"/>
+  <xd:arg xd:name="s-&gt;mask[].val" xd:originalName="s" xd:direction="in" xd:interfaceRef="s_axi_AXI_L" xd:busTypeRef="axilite" xd:offset="0x20" xd:arraySize="4" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="7" xd:worst-case="7" xd:average-case="7"/>
+  <xd:resourceEstimates xd:LUT="410" xd:FF="726" xd:BRAM="4" xd:DSP="8"/>
+</xd:acceleratorMap>

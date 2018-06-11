@@ -166,10 +166,8 @@ proc create_root_design { parentCell } {
   set HWAccel_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:HWAccel:1.0 HWAccel_0 ]
 
   set_property -dict [ list \
-   CONFIG.SUPPORTS_NARROW_BURST {0} \
    CONFIG.NUM_READ_OUTSTANDING {1} \
    CONFIG.NUM_WRITE_OUTSTANDING {1} \
-   CONFIG.MAX_BURST_LENGTH {1} \
  ] [get_bd_intf_pins /HWAccel_0/s_axi_AXI_L]
 
   # Create instance: axi_gpio_0, and set properties
